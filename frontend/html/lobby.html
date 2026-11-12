@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-guess</title>
+    <script type="module" src="../scripts/lobby.js"></script>
+    <link rel="stylesheet" href="../css/lobby.css">
+</head>
+<body>
+    <!-- <pre id="info"></pre> -->
+    <div class="main">
+        <div class="title">
+            <h1>Карта-угадайка</h1>
+            <h4>Нижний Новгород - НТИТП</h4>
+        </div>
+        <div class="menu">
+            <button type="button" id="connectRoom_btn">Присоединиться</button>
+            <button type="button" id="createRoom_btn">Создать</button>
+        </div>
+    </div>
+    <div class="footer_menu">
+        <button type="button" id="changePos_btn">
+            <img src="../img/icon_refresh.png" alt="Сменить локацию">
+        </button>
+        <button type="button" id="credits_btn">
+            <img src="../img/icon_person.png" alt="Сведения">
+        </button>
+    </div>
+    <div id="blackscreen"></div>
+    <div id="map"></div>
+</body>
+</html>
