@@ -11,6 +11,7 @@ const map = new maplibregl.Map({
     container: 'map',
     canvasContextAttributes: {antialias: true},
     interactive: false,
+    attributionControl: false,
 });
 
 map.on('load', () => {
@@ -106,7 +107,7 @@ const changeBackground = setInterval(async () => {
 function changePosition() {
     var next;
     do { next = lobbyPlaces[Math.floor(Math.random() * lobbyPlaces.length)];
-    } while ( next == map.getCenter() );
+    } while ( next === map.getCenter().toArray() );
 
     map.jumpTo({ center: next });
 }
@@ -121,3 +122,6 @@ function sleep(time) {
 };
 
 document.getElementById("changePos_btn").addEventListener("click", changePosition);
+document.getElementById("connectRoom_btn").addEventListener("click", () => {
+    window.location.href = "game.html";
+});
