@@ -8,7 +8,7 @@ const map = new maplibregl.Map({
     bearing: 0,
     container: 'map',
     canvasContextAttributes: {antialias: true},
-    interactive: false,
+    // interactive: false,
     attributionControl: false,
 });
 
