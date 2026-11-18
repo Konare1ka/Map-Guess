@@ -1,0 +1,4 @@
+#библиотеки для питона
+fastapi
+uvicorn
+pysqlite3
