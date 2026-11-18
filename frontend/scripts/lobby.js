@@ -98,14 +98,6 @@ const changeBackground = setInterval(async () => {
     css.style.opacity = "0";
 }, 15000);
 
-// текущие широта и долгота мыши
-// map.on('mousemove', (e) => {
-//     document.getElementById('info').innerHTML =
-//         `${JSON.stringify(e.point)
-//         }<br />${
-//             JSON.stringify(e.lngLat.wrap())}`;
-// });
-
 function changePosition() {
     var next;
     do { next = lobbyPlaces[Math.floor(Math.random() * lobbyPlaces.length)];
